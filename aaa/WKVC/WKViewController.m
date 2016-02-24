@@ -66,6 +66,7 @@
     NSLog(@"%s", __FUNCTION__);
     [_progressView setProgress:0.0 animated:false];
     self.title = webView.title;
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 /**
