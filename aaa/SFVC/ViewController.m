@@ -10,7 +10,7 @@
 #import <MBProgressHUD.h>
 #import <AFNetworking.h>
 #import <SafariServices/SafariServices.h>
-
+#import "ReachabilityViewController.h"
 @interface ViewController ()<SFSafariViewControllerDelegate>
 
 - (IBAction)showSFSafari:(id)sender;
@@ -71,6 +71,7 @@
 
 - (IBAction)showSFSafari:(id)sender {
     [self testSFSafariVC];
+    //[self.navigationController pushViewController:[[ReachabilityViewController alloc]init] animated:YES];
 }
 
 @end
